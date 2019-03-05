@@ -5,9 +5,9 @@ const test = QUnit.test;
 function makeMovieTemplate(movie) {
     const html = `
     <li>
-    <h2>Star Wars</h2>
-    <img src="https://image.tmdb.org/t/p/w92/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg">
-    <p>Release Date: 1977-05-25</p>
+    <h2>${movie.title}</h2>
+    <img src="https://image.tmdb.org/t/p/w92${movie.poster_path}">
+    <p>Release Date: ${movie.release_date}</p>
     </li>
     `;
 
