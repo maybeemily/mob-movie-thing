@@ -6,9 +6,12 @@ body {
 
 header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     min-width: 700px;
+    background-color: #3EC1FF;
+    margin: -10px -20px 20px -20px;
+    border-radius: 5px;
 }
 
 h2 {
@@ -36,6 +39,14 @@ input {
     text-align: center;
 }
 
+#search-button {
+    background-color: #3EC1FF;
+}
+
+#search-button:hover {
+    background-color: #F9B600;
+}
+
 #paging-display {
     display: flex;
     justify-content: center;
@@ -48,7 +59,7 @@ input {
 }
 
 #previous-button:hover , #next-button:hover {
-    color: coral;
+    color: #3EC1FF;
 }
 
 ul {
@@ -63,12 +74,12 @@ li {
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    background-color: #48AEF0;
+    background-color: #3EC1FF;
     margin: 10px;
     width: 150px;
     height: 250px;
 }
 
 li:hover {
-    background-color: coral;
+    background-color: #F9B600;
 }
