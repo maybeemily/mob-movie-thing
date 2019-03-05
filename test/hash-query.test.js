@@ -1,4 +1,4 @@
-import { writeSearchToQuery, writePageToQuery, readOptions } from '../src/hash-query-tests.js';
+import { writeSearchToQuery, writePageToQuery, readOptions } from '../src/hash-query.js';
 
 const test = QUnit.test;
 
@@ -55,3 +55,4 @@ test('reads options from query', assert => {
     //assert
     assert.deepEqual(result, expected);
 });
+
