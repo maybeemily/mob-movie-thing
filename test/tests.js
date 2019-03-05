@@ -1,7 +1,10 @@
 import './html-equal.js';
 import makeMovieTemplate from '../src/movie-template.js';
+import './paging-component.test.js';
 
 const test = QUnit.test;
+
+QUnit.module('html tests');
 
 test('template will be the same as static html', assert => {
     //arrange
