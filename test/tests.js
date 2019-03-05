@@ -1,6 +1,6 @@
 import './html-equal.js';
 import makeMovieTemplate from '../src/movie-template.js';
-import './paging-component.test.js';
+import './hash-query.test.js';
 
 const test = QUnit.test;
 
