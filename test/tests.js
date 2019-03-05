@@ -1,20 +1,7 @@
 import './html-equal.js';
+import makeMovieTemplate from '../src/movie-template.js';
 
 const test = QUnit.test;
-
-function makeMovieTemplate(movie) {
-    const html = `
-    <li>
-    <h2>${movie.title}</h2>
-    <img src="https://image.tmdb.org/t/p/w92${movie.poster_path}">
-    <p>Release Date: ${movie.release_date}</p>
-    </li>
-    `;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
 
 test('template will be the same as static html', assert => {
     //arrange
@@ -36,5 +23,5 @@ test('template will be the same as static html', assert => {
     <p>Release Date: 1977-05-25</p>
     </li>
 `);
-
 });
+
