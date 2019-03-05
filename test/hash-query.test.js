@@ -1,3 +1,5 @@
+import { writeSearchToQuery, writePageToQuery, readOptions } from '../src/hash-query-tests.js';
+
 const test = QUnit.test;
 
 QUnit.module('paging tests');
@@ -9,15 +11,6 @@ QUnit.module('paging tests');
 //     const endIndex = startIndex + perPage;
 //     return fakeArray.slice(startIndex, endIndex);
 // }
-
-function writeSearchToQuery(existingQuery, searchTerm) {
-    const searchParams = new URLSearchParams(existingQuery);
-    searchParams.set('searchTerm', searchTerm);
-    searchParams.set('page', 1);
-
-    return searchParams.toString();
-}
-
 
 test('write search to empty query', assert => {
     //arrange
@@ -39,14 +32,6 @@ test('write search to existing query changes search and resets page', assert => 
     assert.equal(query, 'searchTerm=harry+potter&page=1');
 });
 
-function writePageToQuery(existingQuery, page) {
-    const searchParams = new URLSearchParams(existingQuery);
-    searchParams.set('page', page);
-
-    return searchParams.toString();
-
-}
-
 test('write page to existing query', assert => {
     //arrange
     const existingQuery = 'searchTerm=star+wars&page=1';
@@ -57,15 +42,6 @@ test('write page to existing query', assert => {
     //assert
     assert.equal(query, expected);
 });
-
-function readOptions(query) {
-    const searchParams = new URLSearchParams(query);
-    const existingQuery = {
-        searchTerm: searchParams.get('searchTerm'),
-        page: parseInt(searchParams.get('page'))
-    };
-    return existingQuery;
-}
 
 test('reads options from query', assert => {
     //arrange
