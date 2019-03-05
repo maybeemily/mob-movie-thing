@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Movie List</title>
 </head>
 <body>
-    
+    <header>
+        <img src="../assets/banana.png" id="logo">
+        <h1>Banana's Movie Explorer</h1>
+    </header>
+    <main>
+        <form id="search-form">
+            <label for="title-search"></label>
+            <input type="text" name="title-search" id="title-search">
+            <button>Search</button>
+        </form>
+        <ul id="movie-list">
+            <li>
+                <h2>Star Wars</h2>
+                <img src="https://image.tmdb.org/t/p/w92/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg">
+                <p>Release Date: 1977-05-25</p>
+            </li>
+            <li>
+                <h2>Star Wars</h2>
+                <img src="https://image.tmdb.org/t/p/w92/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg">
+                <p>Release Date: 1977-05-25</p>
+            </li>
+            <li>
+                <h2>Star Wars</h2>
+                <img src="https://image.tmdb.org/t/p/w92/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg">
+                <p>Release Date: 1977-05-25</p>
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
