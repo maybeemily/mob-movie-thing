@@ -1,6 +1,7 @@
 import './html-equal.js';
 import makeMovieTemplate from '../src/movie-template.js';
 import './hash-query.test.js';
+import './make-search-url.test.js';
 
 const test = QUnit.test;
 
