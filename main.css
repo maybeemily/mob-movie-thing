@@ -18,11 +18,20 @@ h2 {
     font-size: 1.25em;
 }
 
+.hidden {
+    display: none;
+}
+
 .logo {
     width: 50px;
     border-radius: 5px;
     margin: 10px;
 }
+
+#prompt {
+    text-align: center;
+}
+
 #second-banana {
     transform: scaleX(-1);
 }

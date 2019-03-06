@@ -1,6 +1,6 @@
 import { writePageToQuery } from './hash-query.js';
 
-//const pagingDisplay = document.getElementById('paging-display');
+
 const previousButton = document.getElementById('previous-button');
 const nextButton = document.getElementById('next-button');
 const currentPage = document.getElementById('page');

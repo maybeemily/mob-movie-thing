@@ -3,6 +3,20 @@ const test = QUnit.test;
 
 QUnit.module('url test');
 
+test('function returns URL if no search term', assert => {
+    //arrange
+    const queryOptions = {
+        searchTerm: '',
+        page: 1
+    };
+
+    const expected = '';
+    //act
+    const result = makeSearchMovieUrl(queryOptions);
+    //assert
+    assert.equal(result, expected);
+});
+
 test('url includes query and page', assert => {
     //arrange
     const queryOptions = {

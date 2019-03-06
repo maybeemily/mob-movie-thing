@@ -19,16 +19,21 @@
             <input type="text" name="title-search" id="title-search">
             <button id="search-button">Search</button>
         </form>
-        <section id="paging-display">
-            <button id="previous-button"> &lt; &lt;</button>
-                <p>
-                    Page <span id="page"></span> of
-                    <span id="total-pages"></span>
-                </p>
-            <button id="next-button"> &gt; &gt;</button>
+        <section id="prompt">
+            <p>Search to find a movie!</p>
         </section>
-        <ul id="movie-list">
-        </ul>
+        <div id="movies-container" class="hidden">
+            <section id="paging-display">
+                <button id="previous-button"> &lt; &lt;</button>
+                    <p>
+                        Page <span id="page"></span> of
+                        <span id="total-pages"></span>
+                    </p>
+                <button id="next-button"> &gt; &gt;</button>
+            </section>
+            <ul id="movie-list">
+            </ul>
+        </div>
     </main>
     <footer></footer>
     <script type="module" src="src/index.js"></script>
