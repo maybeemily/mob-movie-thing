@@ -18,10 +18,13 @@ h2 {
     font-size: 1.25em;
 }
 
-#logo {
+.logo {
     width: 50px;
     border-radius: 5px;
     margin: 10px;
+}
+#second-banana {
+    transform: scaleX(-1);
 }
 
 button, input {
